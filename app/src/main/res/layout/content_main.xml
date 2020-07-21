@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FFC107"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="$ Converter $"
+        android:textAllCaps="false"
+        android:textColor="#F44336"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/spicy_rice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <EditText
+        android:id="@+id/dollarAmount"
+        android:layout_width="260dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Enter amount in $$"
+        android:inputType="textPersonName"
+        android:textColor="#F44336"
+        android:textColorHint="#9C27B0"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="166dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:onClick="btnClick"
+        android:text="INR Amount"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dollarAmount"
+        app:layout_constraintTop_toBottomOf="@+id/dollarAmount"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/currency" />
+</androidx.constraintlayout.widget.ConstraintLayout>
