@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codewithvivek.convertex">
+    package="com.codewithvivek.convertex"> // yes, code with vivek
 
     <application
         android:allowBackup="true"
