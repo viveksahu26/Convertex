@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EditText dollarAmount =(EditText)findViewById(R.id.dollarAmount);
         String dollars = dollarAmount.getText().toString();
         Double doubleDollars = Double.parseDouble(dollars);
-        Double doubleInr = 75.20 * ( doubleDollars);
+        Double doubleInr = 74.85 * ( doubleDollars);
         String toastText = "  = " + doubleInr + " INR ";
 
         Toast.makeText(this,toastText, Toast.LENGTH_SHORT).show();
